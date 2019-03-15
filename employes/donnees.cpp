@@ -69,5 +69,13 @@ Tache Donnees::ChercherTacheParIdentifiant(string inId)
 {
 	Tache tacheTrouve;
 
+	for (int cpt = 0; cpt < maxTaches; cpt++)
+	{
+		if(lesTaches[cpt]->getIdentifiant == inId)
+		{
+			tacheTrouve = *lesTaches[cpt];
+		}
+	}
+
 	return tacheTrouve;
 }

@@ -402,7 +402,9 @@ namespace employes {
 		txtEtat->Text = "";
 	}
 
-	private: System::Void btnRechercherTache_Click(System::Object^  sender, System::EventArgs^  e) {
+	private: System::Void btnRechercherTache_Click(System::Object^  sender, System::EventArgs^  e) 
+	{
+
 	}
 
 };
