@@ -47,6 +47,15 @@ bool Donnees::AjouterEmploye(Employe inEmploye)
 bool Donnees::AjouterTache(Tache inTache) 
 {
 	bool ajoutReussi = false;
+	for (int cpt = 0; cpt < maxTaches; cpt++)
+	{
+		if(lesTaches[cpt] == NULL)
+		{
+			lesTaches[cpt] = &inTache;
+			ajoutReussi = true;
+			break;
+		}
+	}
 
 	return ajoutReussi;
 }
